@@ -1,0 +1,103 @@
+html, body {
+    background-color: #0b032e;
+    height: 100%;
+    width: 100%;
+    font-family: 'Itim', cursive;
+}
+
+h1 {
+    color: #0b032e;
+    margin: 0px 0px 7px 0px;
+}
+
+h2 {
+    color: #74546a;
+}
+
+.container, .outerRow {
+    height: 100%;
+}
+
+/* Middle section date idea card */
+#dateIdea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #74546a;
+    border-radius: 25px;
+    height: 90%;
+    overflow: hidden;
+    padding: 0;
+}
+
+#imgContain {
+    height: 350px;
+    overflow: hidden;
+}
+
+img {
+    max-height:100%;
+    max-width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+#textContain {
+    background-color: #ffb997;
+    padding: 15px;
+    height: 40%;
+    width: 100%;
+}
+
+.infoBtn {
+    font-size: 30px;
+    padding-top: 5px;
+    color: #0b032e;
+}
+.infoBtn:hover {
+    color: #74546a;
+    cursor: pointer;
+}
+
+hr {
+    margin: 0;
+    border-top: 3px solid #0b032e;    
+}
+
+/* side buttons */
+#buttonContain {
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    padding: 0;
+}
+
+#reject, #accept {
+    background-color: #ffd5c0;
+    height: 100%;
+}
+
+.rejectBtn {
+    color: #74546a;
+    height: 120px;
+    width: 120px;
+    padding: 0;
+    font-size: 50px;
+}
+.rejectBtn:hover {
+    color: #0b032e;
+}
+
+.acceptBtn {
+    color: #f67e7d;
+    height: 120px;
+    width: 120px;
+    padding: 0;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 22px;
+}
+.acceptBtn:hover {
+    color: #F5484B;
+    cursor: pointer;
+}
