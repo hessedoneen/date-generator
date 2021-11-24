@@ -32,6 +32,7 @@ h2 {
 #imgContain {
     height: 350px;
     overflow: hidden;
+    position: relative;
 }
 
 img {
@@ -40,6 +41,44 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;  
+}
+
+#img, #imgBtns {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#imgBtns {
+    z-index: 10;
+}
+  
+.imgBtnsRow {
+    --bs-gutter-x: 0;
+}
+#arrowLeft {
+    text-align: left;
+    padding-top: 140px;
+}
+
+#arrowRight {
+    text-align: right;
+    padding-top: 140px;
+}
+
+.arrowBtn {
+    opacity: 70%;
+    background: none;
+    border: none;
+    color: #0b032e;
+    font-size: 50px;
+}
+.arrowBtn:hover {
+    opacity: 100%;
+    cursor: pointer;
 }
 
 #textContain {
@@ -101,3 +140,66 @@ hr {
     color: #F5484B;
     cursor: pointer;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #ffb997;
+    margin: 10% auto; 
+    width: 60%; 
+    height: 60%;
+    border: none;
+    border-radius: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  /* Modal Close Button */
+  .close {
+    color: #0b032e;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 70%;
+    position: relative;
+    top: -20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    opacity: 100%;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .topbar {
+      padding: 15px;
+      --bs-gutter-x: 0;
+      height: 20%;
+      width: 100%;
+      background-color: #df8483;
+  }
+  
+  .modalBottom {
+    margin: 10px;
+    height: 100%;
+    background-image: url("stamp.png");
+  }
+
+  .popupLeft {
+      height: 100%;
+      border-left: 3px solid #df8483;
+  }
